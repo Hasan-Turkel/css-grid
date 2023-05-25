@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+}
+main{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    grid-template-rows: 1.5fr 3fr 4fr 1.5fr;
+    width: 500px;
+    margin: auto;
+}
+.content{
+    background-color: skyblue;
+    padding: 1rem;
+}
+.div1{
+    grid-column: span 12;
+    
+}
+.div2, .div3, .div4{
+    grid-column: span 3;
+    
+}
+.div5{
+    grid-column: span 3 ;
+    grid-row: span 2;
+}
+.div6{
+    grid-column: span 9;
+}
+.div7{
+    grid-column: span 12;
+}
